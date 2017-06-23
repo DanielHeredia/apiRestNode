@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:27017/nfcDB', (err, res) => {
     } else {
         console.log('LA conexion ala base de datos esta corriendo correctamnte');
         app.listen(port, function () {
-            console.log('servidor del API Rest Validacion NFC' + port);
+            console.log('servidor del API Rest Validacion NFC puerto: ' + port);
         })
     }
 });
